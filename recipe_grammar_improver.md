@@ -75,7 +75,13 @@ grammar_improver("HELLO WORLD!") => False
 Given an empty string
 It returns an error message - "Please provide a string"
 """
-grammar_improver("") => []
+grammar_improver("") => "Please provide a string"
+
+"""
+Given a non-string
+It returns an error message - "Please provide a string"
+"""
+grammar_improver(10) => "Please provide a string"
 
 """
 Given a None value
